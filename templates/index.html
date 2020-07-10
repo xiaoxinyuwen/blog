@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>网站名：{{site}}</h3>
+<h3>网站地址：{{u}}</h3>
+<div>
+    <ul>
+        <h4>blog教程目录</h4>
+        {% for list in lists %}
+        <li>{{list}}</li>
+        {% endfor %}
+    </ul>
+</div>
+<div>
+    <h4>blog作者信息</h4>
+    {%for key, value in mydict.items%}
+    <li>{{key}}:{{value}}</li>
+    {%endfor%}
+</div>
+</body>
+</html>
